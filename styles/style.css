@@ -1,31 +1,26 @@
+/* Reset default margins and paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body styling */
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #f0f0f0;
   margin: 0 5rem;
   padding: 0;
-
 }
 
+/* Header styling */
 header {
   background: #004466;
   color: white;
   position: relative;
 }
-.bullet-column{
-  list-style-type: disc;
-  padding-left: 5rem;
-  line-height: 1.5;
-}
-.bullet-column  li {
-  height: 1rem;
-  margin-bottom: 0.5rem;
-}
+
+/* Profile section styling */
 .profile {
   display: flex;
   align-items: center;
@@ -39,9 +34,7 @@ header {
   color: #f4f4f4;
   font-size: 1.5rem;
 }
-.course h2{
-margin-top: 1rem;
-}
+
 .profile img {
   height: 100px;
   width: auto;
@@ -50,6 +43,7 @@ margin-top: 1rem;
   border: 2px solid white;
 }
 
+/* Navigation styling */
 nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -64,8 +58,10 @@ nav ul li a {
   text-decoration: none;
   text-align: center;
 }
-
-/* Hamburger Menu Button */
+nav ul li a:hover{
+  color: lightblue;
+}
+/* Hamburger menu styling */
 .hamburger {
   display: none;
   position: absolute;
@@ -84,23 +80,28 @@ nav ul li a {
   content: "✖";
 }
 
+/* Main content styling */
 main {
   padding: 1rem;
 }
 
-h1,h2,h3 {
+/* Heading styling */
+h1, h2, h3 {
   color: #004466;
   margin-bottom: 0.5rem;
   text-align: center;
 }
-h4{
+
+h4 {
   color: #004466;
   margin-bottom: 0.5rem;
 }
+
 .center-heading {
   text-align: center;
 }
 
+/* Filter buttons styling */
 .filter-buttons {
   display: flex;
   justify-content: center;
@@ -121,6 +122,7 @@ button.filter:hover {
   background: #006699;
 }
 
+/* Courses grid styling */
 .courses-grid {
   display: grid;
   gap: 1rem;
@@ -135,6 +137,7 @@ button.filter:hover {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Footer styling */
 footer {
   background: #004466;
   color: white;
@@ -142,56 +145,91 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
-.box{
+
+/* Box styling */
+.box {
   border: 1px solid black;
   padding: 20px;
   background-color: lightblue;
- 
 }
-.location{
+
+/* Location styling */
+.location {
   text-align: center;
 }
-.course-container{
+
+/* Course container styling */
+.course-container {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
   padding: 3rem;
- 
 }
-.place{
- align-items: center;
- gap:20px;
- padding: 20px;
+
+.place {
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
-.place img{
-  width:50%;
-  height:auto;
+
+.place img {
+  width: 50%;
+  height: auto;
   border-radius: 10px;
   display: block;
   margin-left: 25%;
 }
 
-.course-container section{
+.course-container section {
   flex: 3 3 45%;
   background-color: #dddada;
 }
 
-.place p{
-  margin:2rem;
+.place p {
+  margin: 2rem;
   font-size: 1rem;
   line-height: 1.4;
-  text-align:center;
-  margin: 1 1 5%;
+  text-align: center;
+  margin: 1px 1px 5%;
 }
+
 .course p {
   text-align: center;
 }
-/* Responsive styles */
-@media(max-width: 700px) {
+
+/* Coursework section styling */
+.course ul {
+  list-style-type: none;
+  padding-left: 1.5em;
+  margin-left: 0;
+  list-style-position: inside;
+  overflow: hidden;
+}
+
+.course ul li {
+  text-indent: -0.5em;
+  padding-left: 1em;
+}
+ul.bullet-column {
+  text-align: center;
+  list-style-position: inside;
+  overflow: hidden;
+  line-height: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+ul.bullet-column li {
+  text-indent: -0.5em;
+  padding-left: 1em;
+}
+.course h2{
+  padding-top: 1rem;
+}
+@media (max-width: 700px) {
   .hamburger {
     display: block;
     font-size: 20px;
-   
   }
 
   nav ul {
@@ -201,47 +239,60 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
-    line-height:0.2;
+    line-height: 0.2;
     background-color: black;
-    padding-top:3rem;
+    padding-top: 3rem;
   }
 
-  
- nav ul.show {
+  nav ul.show {
     display: flex;
   }
-  .nav-link li a{
-    color:white;
+
+  .nav-link li a {
+    color: white;
   }
-  .nav-link li a:hover{
-    color:aqua;
-  
+
+  .nav-link li a:hover {
+    color: aqua;
   }
+
   nav ul li {
     border-top: 1px solid #fff;
     width: 100%;
     text-align: center;
     padding: 1rem 0;
   }
-  .course-container{
+
+  .course-container {
     display: flex;
     flex-direction: column;
   }
-  .profile h1{
+
+  .profile h1 {
     font-size: 20px;
     margin-right: 3rem;
   }
-  .course h2,.place h2,.box h3,.location h2 {
+
+  .course h2, .place h2, .box h3, .location h2 {
     font-size: 18px;
   }
-  .bullet-column{
-  list-style-type: disc;
-  font-weight: 2px;
-  padding-left: 4rem;
-  line-height:.5rem;
+
+  .bullet-column {
+    list-style-type: disc;
+    font-weight: 2px;
+    padding-left: 4rem;
+    line-height: 0.5rem;
+  }
+
+  .bullet-column li::marker {
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  ul.bullet-column {
+  padding-left: 1.5em;
+  margin-left: 0;
+  list-style-position: inside;
+  overflow: hidden;
 }
-.bullet-column  li::marker {
-  font-size: 0.5rem;
-  margin-bottom: 0.5rem;
-}
+
 }

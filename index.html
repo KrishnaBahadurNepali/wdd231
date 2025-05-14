@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Krisha Bahadur Nepali">
+  <meta name="keywords" content="wdd231,web design,HTML,CSS,responsive design,beginner course">
+  <meta name="description" content="wdd231 introduces frontend web design, teaching HTML, CSS, and how to create user-friendly, responsive websites.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <title>Krishna Bahadur Nepali wdd231</title>
-  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/script.js" defer></script>
 </head>
 <body>
   <header>
     <div class="profile">
-      <img src="images/krishna.jpg" alt="Krishna's Photo" />
+      <img src="images/krishna.jpg" alt="Krishna's Photo">
       <h1>Krishna Bahadur Nepali wdd231</h1>
     </div>
-
     <button class="hamburger" id="hamburger">&#9776;</button>
-
     <nav>
       <ul class="nav-link" id="navLink">
         <li><a href="#">Home</a></li>
@@ -29,37 +33,36 @@
   <main>
     <h2>HOME</h2>
     <div class="course-container">
-       <section class="course">
-       <h2>Coursework</h2>
+      <section class="course">
+        <h2>Coursework</h2>
         <ul class="bullet-column">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Introduction to Programming</li>
+          <li>Web Fundamentals</li>
+          <li>Programming with Functions</li>
+          <li>Programming with Classes</li>
+          <li>Dynamic Web Fundamentals</li>
+          <li>Frontend Web Development I</li>
         </ul>
       </section>
 
       <section class="place">
-       <h2>Dhading Nepal</h2>
-       <img src="images/tree.webp" alt="my place image" class="place-image">
+        <h2>Dhading Nepal</h2>
+        <img src="images/tree.webp" alt="my place image" class="place-image">
         <p>Dhading is a scenic district in central Nepal, known for its hills, rivers, and views of the Ganesh Himal.</p>
       </section>
     </div>
 
     <div class="box">
-      <h3>Web & computer program Certificate</h3>
-
+      <h3>Web & Computer Programming Certificate</h3>
       <div class="filter-buttons">
-        <button class="filter">All</button>
-        <button class="filter">WDD</button>
-        <button class="filter">CSE</button>
+        <button class="filter" data-filter="all">All</button>
+        <button class="filter" data-filter="WDD">WDD</button>
+        <button class="filter" data-filter="CSE">CSE</button>
       </div>
-
-      <div class="courses-grid"></div>
+      <div class="courses-grid" id="courses-grid"></div>
+      <p>Total Credits: <span id="total-credits">0</span></p>
     </div>
-     
+
     <div class="location">
       <section>
         <h2>Location</h2>
@@ -73,10 +76,8 @@
   </main>
 
   <footer>
-   <p>&copy 2025 | Krishna | Nepal</p>
+    <p>&copy; 2025 | Krishna Bahadur Nepali wdd231 | Nepal</p>
     <span id="last-modified"></span>
   </footer>
-
-  <script src="scripts/script.js"></script>
 </body>
 </html>
