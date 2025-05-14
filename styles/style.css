@@ -135,6 +135,7 @@ button.filter:hover {
   border-radius: 8px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size:14.5px;
 }
 
 /* Footer styling */
@@ -288,5 +289,7 @@ ul.bullet-column li {
   list-style-position: inside;
   overflow: hidden;
 }
-
+.course-card{
+  font-size: small;
+}
 }
