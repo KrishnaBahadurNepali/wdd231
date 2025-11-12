@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border-radius: 8px;
+  
 }
 
 /* Body styling */
@@ -11,12 +13,24 @@ body {
   background: #f0f0f0;
   margin: 0 5rem;
   padding: 0;
+  color: #333;
+  line-height: 1.5;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
 }
 /* Header styling */
 header {
   background: #004466;
   color: white;
   position: relative;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
 }
 
 /* Profile section styling */
@@ -168,8 +182,15 @@ footer {
 
 .place {
   align-items: center;
-  gap: 20px;
-  padding: 20px;
+  gap: auto;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: lightblue;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  transform: scale(1);
 }
 
 .place img {
@@ -182,7 +203,11 @@ footer {
 
 .course-container section {
   flex: 3 3 45%;
-  background-color: #dddada;
+  background-color:lightblue;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .place p {
@@ -191,10 +216,21 @@ footer {
   line-height: 1.4;
   text-align: center;
   margin: 1px 1px 5%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+
 }
 
 .course p {
   text-align: center;
+  margin: 1px 1px 5%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+
 }
 
 /* Coursework section styling */
@@ -204,6 +240,10 @@ footer {
   margin-left: 0;
   list-style-position: inside;
   overflow: hidden;
+  line-height: 2rem;
+  margin-top: 1.5rem;
+  padding: 2rem;
+
 }
 
 .course ul li {
@@ -223,72 +263,29 @@ ul.bullet-column li {
   text-indent: -0.5em;
   padding-left: 1em;
 }
-.course h2{
-  padding-top: 1.5rem;
-}
-@media (max-width: 700px) {
-  .hamburger {
-    display: block;
-    font-size: 20px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    line-height: 0.2;
-    background-color: black;
-    padding-top: 3rem;
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  .nav-link li a {
-    color: white;
-  }
-
-  .nav-link li a:hover {
-    color: aqua;
-  }
-
-  nav ul li {
-    border-top: 1px solid #fff;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-  }
-
-  .course-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .profile h1 {
-    font-size: 20px;
-    margin-right: 3rem;
-  }
-
-  .course h2, .place h2, .box h3, .location h2 {
-    font-size: 18px;
-  }
-
-
-  .bullet-column li::marker {
-    font-size: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  ul.bullet-column {
-  padding-left: 1.5em;
-  margin-left: 0;
+ul.bullet-column {
+  text-align: center;
   list-style-position: inside;
   overflow: hidden;
+  line-height: 3rem;
+  margin-top: 1.5rem;
+  padding: 2rem;
 }
-.course-card{
-  font-size: small;
+
+ul.bullet-column li {
+  text-indent: -0.5em;
+  padding-left: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  margin-bottom: 0.5rem;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+
 }
+.course h2{
+  padding-top: 1.5rem;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+
 }
+

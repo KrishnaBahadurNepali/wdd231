@@ -1,0 +1,127 @@
+@media (max-width: 700px) {
+  .hamburger {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1002;
+    
+  }
+
+  .body {
+    padding:10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: lightblue;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    transform: scale(1);
+    width: 100%; 
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 0.2;
+    background-color: black;
+    padding-top: 3rem;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .nav-link li a {
+    color: white;
+  }
+
+  .nav-link li a:hover {
+    color: aqua;
+  }
+
+  nav ul li {
+    border-top: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .course-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile h1 {
+    font-size: 20px;
+    margin-right: 3rem;
+  }
+
+  .course h2, .place h2, .box h3, .location h2 {
+    font-size: 18px;
+  }
+
+
+  .bullet-column li::marker {
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  ul.bullet-column {
+  padding-left: 1.5em;
+  margin-left: 0;
+  list-style-position: inside;
+  overflow: hidden;
+}
+.course-card{
+  font-size: small;
+}.course-container{
+  padding: 0;
+  margin: 0;    
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: lightblue;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+.box{
+  font-size: small;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: lightblue;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+.place{
+  font-size: small;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: lightblue;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+.bullet-column li {
+  font-size: small;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: lightblue;    
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+}
