@@ -1,3 +1,4 @@
+
 const courses = [
   {
     code: "WDD 130",
