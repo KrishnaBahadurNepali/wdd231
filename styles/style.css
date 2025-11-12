@@ -182,7 +182,7 @@ footer {
 
 .place {
   align-items: center;
-  gap: auto;
+  gap: 1rem;
   padding: 1rem;
   margin-bottom: 2rem;
   border: 1px solid #ccc;
