@@ -121,7 +121,7 @@
     border-radius: 8px;
     background-color: lightblue;    
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
     transform: scale(1);
 }
 }
