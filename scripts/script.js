@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
       credits: 2,
       certificate: "Web and Computer Programming",
       description:
-        "This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.",
+        "This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems. It helps to varify boolen",
       technology: ["Python"],
       completed: false,
     },
